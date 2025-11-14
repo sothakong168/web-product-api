@@ -8,9 +8,6 @@ import com.setec.entities.Product;
 
 public interface ProductRepo extends JpaRepository<Product, Integer>{
 
-	static List<Product> findByName(String name) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	List<Product> findByName(String name);
 
 }
